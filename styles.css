@@ -3,7 +3,7 @@ body {
     background-color: #f8f8f8;
     margin: 0;
     padding: 0;
-    background-image: url(images/FondoD.jpg);
+    background-image: url(images/fondodcopy.jpg);
 
 }
 
@@ -60,7 +60,7 @@ height: 100vh;
 
 #home {
     background-color: #000;
-    background-image: url(images/photob.jpeg);
+    background-image: url(images/photobcopy.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
