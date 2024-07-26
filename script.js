@@ -26,5 +26,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             musicIcon.classList.add('bi-play');
         }
     };
+
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            music.pause();
+            musicIcon.classList.remove('bi-pause');
+            musicIcon.classList.add('bi-play');
+        }
+    });
 });
+
 

@@ -10,24 +10,30 @@ body {
 h1, h2, p {
     font-family: 'Lobster Two', sans-serif;
     color:#fff;
+    
 }
 
 .principal {
-
-text-align: center;
-align-content: center;
-height: 100vh;
+padding-top: 150px;
+text-align:center;
+height:100vh;
 
 } 
 
+.name{
+    z-index: 1001;
+}
+
 #background-video {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
+
 }
 
 /* Estilo para el botón de control de música */
@@ -38,18 +44,18 @@ height: 100vh;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0);
     /*background-color: #ff4081;*/
-    color: #000;
-    border: none;
+    color: #fff;
+    border-color: #fff;
     border-radius: 5px;
     cursor: pointer;
     z-index: 1001;
-    outline-color: #000;
+    outline-color: #fff;
 }
 
 #music-control:hover {
    /* background-color: #e91e63;*/
-    border-color: #000;
-    outline-color: #000;
+    border-color: #fff;
+    outline-color: #fff;
 
 }
 
@@ -61,6 +67,7 @@ height: 100vh;
 #home {
     background-color: #000;
     background-image: url(images/photobcopy.jpeg);
+    filter:brightness(0.7); /*Ajustar valor segun gusto y necesitdad*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
