@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mora - Mis XV Años</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Audio de fondo -->
+  <audio id="background-music" loop>
+    <source src="music/GirlsLikeYou.mp3" type="audio/mp3">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<!-- Botón de control de música -->
+<!-- <button id="music-control" onclick="toggleMusic()">Pausar Música</button> -->
+<button id="music-control" class="btn btn-primary" onclick="toggleMusic()">
+    <i id="music-icon" class="bi bi-pause"></i>
+</button>
+
+    <section id="home" class="section">
+        <div class="content">
+            <h1 class="name">Mora</h1>
+            <p class="event">Mis XV Años</p>
+        </div>
+    </section>
+    <section id="details" class="section">
+        <div class="content">
+            <h2 style="color: white;">Detalles del Evento</h2>
+            <img src="images/photo3.jpeg" alt="Mora" class="photo">
+            <p class="date" style="color: white;">Fecha: 23 de Agosto de 2024</p>
+            <p class="location" style="color: white;">Lugar: Jackson Eventos</p>
+            <p class="address" style="color: white;">Dirección: Av. Gaona 1722, Ramos Mejía</p>
+            <p class="address" style="color: white;" >Como Llegar</p>
+        </div>
+    </section>
+    <section id="gallery" class="section">
+        <div class="content">
+            <h2>Galería</h2>
+            <!-- Agrega más imágenes aquí -->
+            <img src="images/photo1.jpeg" alt="Foto 1">
+            <img src="images/photo2.jpeg" alt="Foto 2">
+            <!-- <img src="images/photo3.jpeg" alt="Foto 3"> -->
+        </div>
+    </section>
+    <section id="rsvp" class="section">
+        <div class="content">
+            <h2>Confirmar Asistencia</h2>
+                <a href="https://api.whatsapp.com/send?phone=1131276111&text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20años%20de%20Mora" class="whatsapp-button">WhatsApp</a>
+        </div>
+    </section>
+    <footer>
+        <p class="message">Espero que puedas acompañarme en este día tan especial.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
