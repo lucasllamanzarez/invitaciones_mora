@@ -1,61 +1,52 @@
 body {
-    font-family: 'Lobster Two', sans-serif; 
-    /*font-family: "Allura", cursive;*/
+    font-family: 'Lobster Two', sans-serif;
     background-color: #f8f8f8;
     margin: 0;
     padding: 0;
     background-image: url(images/fondodcopy.jpg);
-
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 h1, h2, p, a {
     font-family: 'Lobster Two', sans-serif;
-    /*font-family: "Allura", cursive;*/
-    color:#fff;
-    
+    color: #fff;
 }
 
 i {
-    color:#fff;
+    color: #fff;
 }
 
-button  {
+button {
     font-family: 'Lobster Two', sans-serif;
-    color:#fff;
+    color: #fff;
 }
 
 .principal {
-padding-top: 150px;
-text-align:center;
-height:100vh;
+    padding-top: 150px;
+    text-align: center;
+    height: 100vh;
+}
 
-} 
-
-.name{
+.name {
     z-index: 1001;
-
 }
 
 #background-video {
-    position:fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
-
-
 }
 
-/* Estilo para el botón de control de música */
 #music-control {
     position: fixed;
     top: 20px;
     right: 20px;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0);
-    /*background-color: #ff4081;*/
     color: #fff;
     border-color: #fff;
     border-radius: 5px;
@@ -65,10 +56,8 @@ height:100vh;
 }
 
 #music-control:hover {
-   /* background-color: #e91e63;*/
     border-color: #fff;
     outline-color: #fff;
-
 }
 
 .section {
@@ -93,7 +82,7 @@ height:100vh;
 #home {
     background-color: #000;
     background-image: url(images/photobcopy.jpeg);
-    filter:brightness(0.7); /*Ajustar valor segun gusto y necesitdad*/
+    filter: brightness(0.7);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,7 +128,6 @@ footer .message {
     background-color: #128C7E;
 }
 
-/*contador*/
 #countdown {
     text-align: center;
     margin-top: 40px;
@@ -153,10 +141,27 @@ footer .message {
 #countdown-timer {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaciado entre los elementos */
+    gap: 20px;
 }
 
 #countdown-timer p {
     font-size: 1.5em;
     margin: 0;
+}
+
+/* Media queries para hacer el sitio responsive */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px;
+    }
+
+    #music-control {
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+    }
+
+    #countdown-timer {
+        flex-direction: column;
+    }
 }
