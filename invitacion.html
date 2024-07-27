@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
   <!-- Audio de fondo -->
@@ -38,16 +40,39 @@
             <p class="date" style="color: white;">Fecha: 23 de Agosto de 2024</p>
             <p class="location" style="color: white;">Lugar: Jackson Eventos</p>
             <p class="address" style="color: white;">Dirección: Av. Gaona 1722, Ramos Mejía</p>
-            <a href="https://www.google.com/maps/place/Jackson+Eventos/@-34.6358927,-58.5552326,15z/data=!4m2!3m1!1s0x0:0x38e917b87a34c683?sa=X&ved=1t:2428&hl=es&ictx=111" target="_blank" class="btn btn-secondary btn-lg active" role="button">Cómo llegar</a>
+            <p class="location" style="color: white;">Code Dress: Elegante</p>
+            <a href="https://www.google.com/maps/place/Jackson+Eventos/@-34.6358927,-58.5552326,15z/data=!4m2!3m1!1s0x0:0x38e917b87a34c683?sa=X&ved=1t:2428&hl=es&ictx=111" target="_blank" class="btn btn-secondary btn-lg active" role="button" >Cómo llegar</a>
+        </div>
+    </section>
+    <section id="bank-details" class="section">
+        <div class="content">
+            <i class="fas fa-gift fa-4x" style="margin-bottom: 20px;"></i>
+            <h2>Mi mayor
+                regalo es que
+                festejes conmigo.
+                Pero si queres hacerme
+                un presente...</h2>
+            <button id="show-bank-details" class="btn btn-secondary btn-lg active" style="margin-top: 20px; font-family: 'Lobster Two', sans-serif;">Mostrar Datos Bancarios</button>
         </div>
     </section>
     <section id="gallery" class="section">
         <div class="content">
-            <h2>Galería</h2>
+            <h2><i class="fa-solid fa-camera-retro fa-2x"></i></h2>
             <!-- Agrega más imágenes aquí -->
             <img src="images/photo1.jpeg" alt="Foto 1" style="filter: brightness(0.7);">
             <img src="images/photo2.jpeg" alt="Foto 2" style="filter: brightness(0.7);">
             <!-- <img src="images/photo3.jpeg" alt="Foto 3"> -->
+        </div>
+    </section>
+    <section id="countdown" class="section">
+        <div class="content">
+            <h2>Cada vez falta menos...</h2>
+            <div id="countdown-timer">
+                <p id="countdown-days">0 Días</p>
+                <p id="countdown-hours">0 Horas</p>
+                <p id="countdown-minutes">0 Minutos</p>
+                <p id="countdown-seconds">0 Segundos</p>
+            </div>
         </div>
     </section>
     <section id="rsvp" class="section">
@@ -57,9 +82,16 @@
         </div>
     </section>
     <footer>
-        <p class="message">Espero que puedas acompañarme en este día tan especial.</p>
+        <p class="message">Si recibiste esta invitación
+            es porque sos una persona
+            muy importante para mi y
+            nada me haría más
+            feliz que contar con
+            tu presencia en una noche
+            tan especial !!</p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

@@ -1,8 +1,6 @@
 body {
-    /* font-family: 'Lobster Two', sans-serif; */
-    font-family: "Allura", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Lobster Two', sans-serif; 
+    /*font-family: "Allura", cursive;*/
     background-color: #f8f8f8;
     margin: 0;
     padding: 0;
@@ -11,12 +9,14 @@ body {
 }
 
 h1, h2, p, a {
-    /* font-family: 'Lobster Two', sans-serif; */
-    font-family: "Allura", cursive;
-  font-weight: 400;
-  font-style: normal;
+    font-family: 'Lobster Two', sans-serif;
+    /*font-family: "Allura", cursive;*/
     color:#fff;
     
+}
+
+i {
+    color:#fff;
 }
 
 button  {
@@ -76,6 +76,20 @@ height:100vh;
     text-align: center;
 }
 
+#bank-details {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#bank-details .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#bank-details-content p {
+    margin: 10px 0;
+}
+
 #home {
     background-color: #000;
     background-image: url(images/photobcopy.jpeg);
@@ -123,4 +137,26 @@ footer .message {
 
 .whatsapp-button:hover {
     background-color: #128C7E;
+}
+
+/*contador*/
+#countdown {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#countdown .content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+#countdown-timer p {
+    font-size: 1.5em;
+    margin: 0;
 }
