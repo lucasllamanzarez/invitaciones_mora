@@ -7,10 +7,15 @@ body {
 
 }
 
-h1, h2, p {
+h1, h2, p, a {
     font-family: 'Lobster Two', sans-serif;
     color:#fff;
     
+}
+
+button  {
+    font-family: 'Lobster Two', sans-serif;
+    color:#fff;
 }
 
 .principal {
@@ -100,6 +105,7 @@ footer .message {
 .whatsapp-button {
     display: inline-block;
     padding: 10px 20px;
+    margin-top: 20px;
     background-color: #25D366;
     color: white;
     text-decoration: none;
