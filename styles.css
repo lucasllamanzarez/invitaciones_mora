@@ -16,7 +16,7 @@ i {
     color: #fff;
 }
 
-button {
+button, .button {
     font-family: 'Lobster Two', sans-serif;
     color: #fff;
 }
@@ -79,7 +79,7 @@ button {
     margin: 10px 0;
 }
 
-#home {
+/*#home {
     background-color: #000;
     background-image: url(images/photobcopy.jpeg);
     filter: brightness(0.7);
@@ -87,6 +87,31 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+}*/
+#home {
+    background-color: #000;
+    background-image: url(images/photobcopy.jpeg);
+    filter: brightness(0.7); /*Ajustar valor segun gusto y necesidad*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end; /* Alinea el contenido al fondo */
+    justify-content: center;
+}
+
+#home .content {
+    text-align: center;
+    padding-bottom: 50px; /* Espaciado desde la parte inferior */
+}
+
+#home .name {
+    font-size: 4em; /* Tamaño de la fuente para el nombre */
+}
+
+#home .event {
+    font-size: 2em; /* Tamaño de la fuente para "Mis XV Años" */
 }
 
 .content {
