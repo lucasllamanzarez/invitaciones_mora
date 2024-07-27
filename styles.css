@@ -114,6 +114,26 @@ button, .button {
     font-size: 2em; /* Tamaño de la fuente para "Mis XV Años" */
 }
 
+
+.arrow-container {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px; /* Ajusta según sea necesario */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-container a {
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.arrow-container a:hover {
+    color: goldenrod;
+}
+
 .content {
     max-width: 600px;
     margin: auto;
